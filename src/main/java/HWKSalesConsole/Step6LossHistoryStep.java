@@ -1,0 +1,39 @@
+package HWKSalesConsole;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import commonutilities.ReusableUtility;
+
+public class Step6LossHistoryStep extends ReusableUtility{
+	
+	WebDriver driver;
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	public Step6LossHistoryStep(WebDriver driver)
+	{
+		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+    
+
+	public void losshistorystep() throws InterruptedException
+	{
+		js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0,800)");
+		driver.findElement(By.xpath("(//h1[text()='Loss History & Scheduled Articles']/../..//button//span[text()='Next'])[1]")).click();
+		By waitforselectproductstep = By.xpath("//h1[text()='Select Products']");
+		waitForElementToAppear(waitforselectproductstep);
+	}
+
+
+}
+
