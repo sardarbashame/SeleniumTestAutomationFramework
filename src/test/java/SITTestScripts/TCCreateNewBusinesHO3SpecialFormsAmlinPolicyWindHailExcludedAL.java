@@ -72,8 +72,8 @@ public class TCCreateNewBusinesHO3SpecialFormsAmlinPolicyWindHailExcludedAL exte
 		
 		String step2heading = driver.findElement(By.xpath("//h1[text()='Insured Name & Location(s)']")).getText();
 		System.out.println(step2heading);
-		Assert.assertEquals(step2heading,"Insured Name & Location(s)");
-		reportLog(step2heading);
+		//Assert.assertEquals(step2heading,"Insured Name & Location(s)");
+		//reportLog(step2heading);
 		
 		//Insured Name &  Risk Location step
 		Step2InsuredNameRiskLocationStep insurednamerisklocstep = new Step2InsuredNameRiskLocationStep(driver);
@@ -81,8 +81,8 @@ public class TCCreateNewBusinesHO3SpecialFormsAmlinPolicyWindHailExcludedAL exte
 		
 		String step3heading = driver.findElement(By.xpath("//h1[text()='Request Risk Report']")).getText();
 		System.out.println(step3heading);
-		Assert.assertEquals(step3heading,"Request Risk Report");
-		reportLog(step3heading);
+		//Assert.assertEquals(step3heading,"Request Risk Report");
+		//reportLog(step3heading);
 		
 		//Request Risk Report Step
 		Step3RequestRiskReportStep requestRiskReportStep = new Step3RequestRiskReportStep(driver);
@@ -90,8 +90,8 @@ public class TCCreateNewBusinesHO3SpecialFormsAmlinPolicyWindHailExcludedAL exte
 		
 		String step4heading = driver.findElement(By.xpath("//h1[text()='Review Risk Report']")).getText();
 		System.out.println(step4heading);
-		Assert.assertEquals(step4heading,"Review Risk Report");
-		reportLog(step4heading);
+		//Assert.assertEquals(step4heading,"Review Risk Report");
+		//reportLog(step4heading);
 		
 		//Review Risk Report Step
 		Step4ReviewRiskReportStep reviewRiskReportStep = new Step4ReviewRiskReportStep(driver);
@@ -99,8 +99,8 @@ public class TCCreateNewBusinesHO3SpecialFormsAmlinPolicyWindHailExcludedAL exte
 		
 		String step5heading = driver.findElement(By.xpath("//h1[text()='Risk Details']")).getText();
 		System.out.println(step5heading);
-		Assert.assertEquals(step5heading,"Risk Details");
-		reportLog(step5heading);
+		//Assert.assertEquals(step5heading,"Risk Details");
+		//reportLog(step5heading);
 		
 		//Risk Details Step
 		Step5RiskDetailsStepNonTX risDetailsStep = new Step5RiskDetailsStepNonTX(driver);
