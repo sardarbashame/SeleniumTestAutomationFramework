@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-		<listener class-name="testcomponents.Listeners"></listener>
+<listener class-name="testcomponents.Listeners"></listener>
 </listeners>
 
   <test thread-count="5" name="Cases">
 	<classes>
 	<class name="SITTestScripts.CreateCaseAudited"></class>
-    </classes>
+    	</classes>
   </test>
   
   <test thread-count="5" name="Opportunities">
@@ -16,6 +16,4 @@
 	<class name="SITTestScripts.CreateDwellingNewOpportunity"></class>
 	</classes>
   </test> 
-  
-    <!-- Test -->
 </suite> <!-- Suite -->
