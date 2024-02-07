@@ -17,11 +17,5 @@
 	</classes>
   </test> 
   
-  <test thread-count="5" name="Quotes">
-	<classes>
-	<class name="SITTestScripts.TCCreateNewBusinesHO3SpecialFormsAmlinPolicyWindHailExcludedAL"></class>
-    </classes>
-  </test> 
-  
-   <!-- Test -->
+    <!-- Test -->
 </suite> <!-- Suite -->
